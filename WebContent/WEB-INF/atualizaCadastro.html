@@ -2,8 +2,11 @@
 <html lang="pt-BR" dir="ltr">
 	
 	<head>
-		<meta charset="UTF-8">
-		<title>João Recicla - Atualização do Cadastro</title>
+		<meta name=author content="Juliano Suman Curti" charset="UTF-8">
+		<meta name=application-name content="João Recicla">
+		<meta name=description content="aplicação web que mapeia latinhas de alumínio e garrafas PET para serem recicladas">
+		<meta name=keywords content="João Recicla, joão recicla, joaorecicla, reciclagem, latinhas, garrafas PET, latas de alumínio, Juliano Suman Curti, juliano suman curti">
+		<title>João Recicla - Atualização de Cadastro</title>
 	</head>
 	
 	<body>
@@ -12,13 +15,15 @@
 			<p>A aplicação web que mapeia latinhas de alumínio e garrafas PET para serem recicladas.</p>	
 			
 			<p>Coletamos apenas latinhas de alumíno de 350 ml e garrafas PET de 2 L.</p><br>
-			<ul>
-				<!-- Próxima coleta é o link para a index/home. A data deve ser dinâmica -->	
-				<li><h4><a href="index.html">Próxima coleta: não determinada</a></h4></li>
-				<li><h4><a href="comoFunciona.html">Como funciona?</a></h4></li>
-				<li><h4><a href="minhasColetas.html">Minhas coletas</a></h4></li>
-				<li><h4><a href="meuCadastro.html">Meu cadastro</a></h4></li>
-			</ul>		
+			<nav>
+				<ul>
+					<!-- Próxima coleta é o link para a index/home. A data deve ser dinâmica -->	
+					<li><h4><a href="index.html">Próxima coleta: não determinada</a></h4></li>
+					<li><h4><a href="comoFunciona.html">Como funciona?</a></h4></li>
+					<li><h4><a href="minhasColetas.html">Minhas coletas</a></h4></li>
+					<li><h4><a href="meuCadastro.html">Meu cadastro</a></h4></li>
+				</ul>
+			</nav>			
 		</header>
 		
 		<main>
@@ -28,7 +33,7 @@
 					  action="TODO"
 					  method="post">
 					<fieldset>
-						<legend>Informações de login</legend>
+						<legend>Mudança de senha</legend>
 						<p><label>Senha atual: <input type=password required name="senhaAtual"></label></p>
 						<p><label>Senha nova: <input type=password required name="senhaNova"></label></p>
 						<p>Não validamos usuários por email, e também não recuperamos senha. Se esquecer suas informações, por gentileza, se cadastre de novo.
@@ -75,7 +80,8 @@
 		
 		<footer>
 			<p>Esta é uma demonstração de uma aplicação web desevolvida por Juliano Suman Curti.</p>
-			<p>Esse software tem licença MIT. Entre em contato comigo pelo email ju.scurti@hotmail.com.</p>
+			<p>Esse software tem licença MIT.
+			<address>Enre em contato por <a href="mailto:ju.scurti@hotmail.com">email.</a></address>
 		</footer>
 	</body>	
 </html>

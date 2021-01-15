@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+	margin: 0.5vw;
+}
+
+body {
+	max-width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+	min-height: 45vh;
+}
+
+h1 {	
+	font-size: 50px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	min-width: fit-content;
+}
+
+#senha {
+	position: relative;
+    left: 10px;
+}
+
+footer, address, address a {
+	line-height: 0.8;
+	text-decoration: none;
+    color: #778899;
+    font-style: normal;
+    text-align:center;
+}
