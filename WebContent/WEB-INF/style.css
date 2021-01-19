@@ -1,47 +1,114 @@
 @charset "UTF-8";
 
-* {
-	margin: 0.5vw;
-}
-
 body {
-	max-width: 650px;
-	margin-right: auto;
-	margin-left: auto;
-	align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+    margin: -10px;
+    overflow-x: hidden;
+    
+    background-color: #fffbfa;
 }
 
-main {
-	min-height: 45vh;
+header {
+	padding-left: 29%;
+    padding-right: 29%;
+    padding-bottom: 16px;
+    margin-right: -29%;
+    margin-left: -29%;
+    margin-bottom: 16px;
+    
+    background-color: #8bd7d7;
+    
+}
+
+header p {
+	margin-bottom: 0px;
+	margin-top: 4px;
 }
 
 h1 {	
 	font-size: 50px;
+	color: #2b898e;
+}
+
+h4 {
+	margin-top: 0px;
 }
 
 nav {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	min-width: 700px;
 }
 
 nav a {
+	padding: 5px;
+	
 	text-decoration: none;
-	min-width: fit-content;
+	color: #247377;
+	font-size: 20px;
 }
 
-#senha {
+nav a:hover {
+	color: white;
+	background-color: #2b898e;
+}
+
+.fichaCadastral {
+	width: 700px;
+}
+
+main article {
+    width: 700px;
+    text-align: justify;
+}
+
+fieldset {
+	margin-bottom: 32px;
+}
+
+fieldset legend{
+	font-size: 20px;
+}
+
+.login {
+	text-align:center;
+}
+
+#senhaL {
 	position: relative;
-    left: 10px;
+    left: 6px;
 }
 
-footer, address, address a {
-	line-height: 0.8;
-	text-decoration: none;
+#senhaC{
+	position: relative;
+    left: 11px;
+}
+
+.threeOptions{
+	display: flex;
+	justify-content: space-around;
+}
+
+footer {
+	padding-top: 16px;
+	padding-left: 34%;
+    padding-right: 34%;
+    margin-top: 16px;
+    margin-right: -34%;
+    margin-left: -34%;
+}
+
+footer p, address, address a {
+    line-height: 1;
     color: #778899;
     font-style: normal;
-    text-align:center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 }

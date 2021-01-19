@@ -6,6 +6,7 @@
 		<meta name=application-name content="João Recicla">
 		<meta name=description content="aplicação web que mapeia latinhas de alumínio e garrafas PET para serem recicladas">
 		<meta name=keywords content="João Recicla, joão recicla, joaorecicla, reciclagem, latinhas, garrafas PET, latas de alumínio, Juliano Suman Curti, juliano suman curti">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
 		<!-- um elemento base é necessário? ex.: <base href="www.joaorecicla.com.br"> -->
 		<title>João Recicla</title>
@@ -13,7 +14,7 @@
 
 	<body>
 		<header> <!-- isso deveria virar uma página e ser importada aqui -->
-			<h1>João Recicla</h1><br>
+			<h1>João Recicla</h1>
 			<nav>
 				<!-- Próxima coleta é o link para a index/home. A data deve ser dinâmica -->	
 				<span><a href="index.html">Próxima coleta: não determinada</a></span>
@@ -21,7 +22,7 @@
 				<span><a href="minhasColetas.html">Minhas coletas</a></span>
 				<span><a href="meuCadastro.html">Meu cadastro</a></span>
 			</nav>
-			<div class="subtitulo"><br>		
+			<div class="subtitulo">		
 				<p>A aplicação web que mapeia latinhas de alumínio e garrafas PET para serem recicladas.</p>
 				<p>Coletamos apenas latinhas de alumíno de 350 ml e garrafas PET de 2 L.</p>
 			</div>		
@@ -29,22 +30,24 @@
 		
 		<main>
 			<section>
-				<br><h4>Conecte-se (log in)</h4>
-				<form name="login" 
-					  action="TODO"
-					  method="get">
-					<p><label>Usuário: <input type=text required name="usuario" ></label></p>
-					<p id="senha" ><label>Senha: <input type=password required name="senha"></label></p>
-					<input type=submit value="Entrar">
-					<a href="cadastro.html">Não é cadastrado? Cadastre-se.</a>			
-				</form>				
+				<fieldset class="login">
+					<legend>Conecte-se (log in)</legend>
+					<form name="login" 
+						  action="TODO"
+						  method="get">
+						<p><label>Usuário: <input type=text required name="usuario" ></label></p>
+						<p id="senhaL" ><label>Senha: <input type=password required name="senha"></label></p>
+						<input type=submit value="Entrar">
+						<a href="cadastro.html">Não é cadastrado? Cadastre-se.</a>			
+					</form>
+				</fieldset>				
 			</section>	
 		</main>
 		
 		<footer>
 			<p>Esta é uma demonstração de uma aplicação web. Esse software tem licença MIT. </p>
 			<p>© 2021 Juliano Suman Curti. Todos os direitos revervados.
-			<address>Entre em contato por<a href="mailto:ju.scurti@hotmail.com">email.</a></address>
+			<address>Entre em contato por <a href="mailto:ju.scurti@hotmail.com">email.</a></address>
 		</footer>
 	</body>
 </html>
