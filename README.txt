@@ -15,4 +15,6 @@ This application will be/is composed of:
 -Tomcat server running in Java
 
 This project is not open for contribution currently.
+
+This project is paused for the time being.
  
